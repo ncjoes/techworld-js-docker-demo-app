@@ -1,9 +1,10 @@
 version: '3'
 services:
-  # my-app:
-  # image: ${docker-registry}/my-app:1.0
-  # ports:
-  # - 3000:3000
+  js-docker-demo-app:
+    image: 859534478573.dkr.ecr.us-east-1.amazonaws.com/devops-lab/js-docker-demo-app:1.1
+    restart: always
+    ports:
+    - 3000:3000
   mongodb:
     image: mongo
     ports:
